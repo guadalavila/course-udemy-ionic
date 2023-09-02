@@ -1,9 +1,20 @@
 <app-header title="Alertas"></app-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar color="primary">
       <ion-title size="large">Alertas</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button (click)="showAlert()" expand="block" >
+    Show Alert
+  </ion-button>
+  <ion-button color="secondary" (click)="showAlertWithInput()" expand="block" >
+    Show Alert with Input
+  </ion-button>
+  <ion-list *ngIf="user">
+    <ion-item>Nombre: {{user.name}}</ion-item>
+    <ion-item>Apellido: {{user.lastName}}</ion-item>
+    <ion-item>URL: {{user.url}}</ion-item>
+  </ion-list>
 </ion-content>
