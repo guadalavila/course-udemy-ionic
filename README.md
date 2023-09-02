@@ -37,6 +37,20 @@ Crear página sin archivo de prueba
 
 ```
 
+### Crear Módulo
+
+```bash
+  ionic g module components
+```
+
+### Crear Componente
+
+La diferencia entre página y componente, es que el componente no va a tener nada relacionado al lazy-loading y no tiene un archivo de rutas.
+
+```bash
+  ionic g c components/header
+```
+
 Navegar entre pantallas
 
 ```bash
