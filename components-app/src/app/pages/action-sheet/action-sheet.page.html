@@ -1,5 +1,5 @@
 <app-header title="Action Sheet"></app-header>
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding"  [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar color="primary">
       <ion-buttons slot="start">
@@ -8,4 +8,8 @@
       <ion-title size="large">Action-sheet</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button  (click)="showActionSheet()" expand="block">
+    Open Action Sheet
+  </ion-button>
+  <!-- <ion-action-sheet trigger="open-action-sheet" header="Acciones" [buttons]="actionSheetButtons"></ion-action-sheet> -->
 </ion-content>
