@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { componentsMock } from 'src/app/utils/mocks';
+
+export interface ItemComponent {
+  icon: string;
+  name: string;
+  redirectTo: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -6,10 +13,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  components: ItemComponent[] = componentsMock;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

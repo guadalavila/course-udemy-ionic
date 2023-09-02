@@ -9,6 +9,12 @@
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button routerLink="/alerts">Alertas</ion-button>
-  <ion-button routerLink="/action-sheet">Action Sheet</ion-button>
+  <!-- <ion-button routerLink="/alerts">Alertas</ion-button>
+  <ion-button routerLink="/action-sheet">Action Sheet</ion-button> -->
+  <ion-list>
+    <ion-item detail *ngFor="let c of components" [routerLink]="c.redirectTo">
+      <ion-icon color="primary" slot="start" [name]="c.icon"></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
 </ion-content>
