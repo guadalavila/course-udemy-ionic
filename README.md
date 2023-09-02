@@ -32,3 +32,9 @@ Crear página sin archivo de prueba
   ionic g page pages/home --spec=false
 
 ```
+
+Navegar entre pantallas
+
+```bash
+  <ion-button routerLink="/alerts">Ir a Alertas<ion-button>
+```
