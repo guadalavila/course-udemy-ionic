@@ -16,4 +16,9 @@ export const componentsMock: ItemComponent[] = [
     name: 'Avatar',
     redirectTo: '/avatar',
   },
+  {
+    icon: 'radio-button-off-outline',
+    name: 'Buttons',
+    redirectTo: '/buttons',
+  },
 ];
