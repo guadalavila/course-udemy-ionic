@@ -23,6 +23,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'avatar',
+    loadChildren: () =>
+      import('./pages/avatar/avatar.module').then((m) => m.AvatarPageModule),
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',

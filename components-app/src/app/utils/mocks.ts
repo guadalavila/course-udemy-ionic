@@ -11,4 +11,9 @@ export const componentsMock: ItemComponent[] = [
     name: 'Action Sheet',
     redirectTo: '/action-sheet',
   },
+  {
+    icon: 'woman-outline',
+    name: 'Avatar',
+    redirectTo: '/avatar',
+  },
 ];
