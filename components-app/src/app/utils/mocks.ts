@@ -31,4 +31,9 @@ export const componentsMock: ItemComponent[] = [
     name: 'Checks',
     redirectTo: '/check',
   },
+  {
+    icon: 'at-circle-outline',
+    name: 'Fab',
+    redirectTo: '/fab',
+  },
 ];

@@ -43,6 +43,11 @@ const routes: Routes = [
       import('./pages/check/check.module').then((m) => m.CheckPageModule),
   },
   {
+    path: 'fab',
+    loadChildren: () =>
+      import('./pages/fab/fab.module').then((m) => m.FabPageModule),
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
