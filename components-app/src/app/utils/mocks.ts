@@ -21,4 +21,9 @@ export const componentsMock: ItemComponent[] = [
     name: 'Buttons',
     redirectTo: '/buttons',
   },
+  {
+    icon: 'card-outline',
+    name: 'Cards',
+    redirectTo: '/card',
+  },
 ];

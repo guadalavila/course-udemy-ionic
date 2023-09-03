@@ -33,6 +33,11 @@ const routes: Routes = [
       import('./pages/buttons/buttons.module').then((m) => m.ButtonsPageModule),
   },
   {
+    path: 'card',
+    loadChildren: () =>
+      import('./pages/card/card.module').then((m) => m.CardPageModule),
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
